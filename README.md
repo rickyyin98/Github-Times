@@ -37,6 +37,9 @@
 		- 英译中数据众包项目：https://github.com/xitu/gold-miner
 		- 如何科学上网：https://github.com/Alvin9999/new-pac
 		- 程序员女装：https://github.com/komeiji-satori/Dress
+		- 已不再维护：https://github.com/dxcweb/high-speed-downloader
+		- 华为做过的恶：https://github.com/evil-huawei/evil-huawei
+		- 学习强国工具：https://github.com/fuck-xuexiqiangguo/Fuck-XueXiQiangGuo
 
 - 我们希望基于此讲一个什么故事
 	- 中文开源编年史：技术社区在如何改变中国社会
