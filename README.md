@@ -1,10 +1,8 @@
 # Github-Times![License MIT](https://img.shields.io/github/license/rickyyin98/Github-times)
 
 
-## What We Want to Do
+## 写在 Github 上的时代故事：历史洪流中的中文开源软件侧记
 
-写在 Github 上的时代故事
-历史洪流中的中文开源软件侧记
 
 
 - 为什么要选择这个题目
