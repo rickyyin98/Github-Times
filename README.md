@@ -1,4 +1,4 @@
-# Github-Times
+# Github-Times![License MIT](https://img.shields.io/github/license/rickyyin98/Github-times)
 
 
 ## What We Want to Do
