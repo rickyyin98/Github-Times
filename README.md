@@ -4,6 +4,7 @@
 ## 写在 Github 上的时代故事：历史洪流中的中文开源软件侧记
 
 
+- 当前版本全文：https://shimo.im/docs/PyY3ccXVHqYYPgDh
 
 - 为什么要选择这个题目
 	- 这个题值得做：Github 承载了独特的历史意义
