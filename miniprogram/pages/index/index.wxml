@@ -1,5 +1,5 @@
 <view class="title">开源改变世界</view>
-<view class="title2">从wuhan2020到中国开源</view>
+<view class="title2">从wuhan2020看中国的开源之路</view>
 
   <scroll-view class="image-group" scroll-x="true">
           <image mode="widthFix" src="cloud://times-1pm10.7469-times-1pm10-1302409958/images/Github1.png" bindtap="firstPart"></image>
