@@ -1,5 +1,4 @@
 <image mode="widthFix" src="cloud://times-1pm10.7469-times-1pm10-1302409958/images/Back1.png" bindtap="back" class="First"></image>
-<h1>开源在中国</h1>
 
 <div class="word">
 1980年，当Unix操作系统的爱好者建立Usenet（新闻讨论组）——开源社区的先驱时，他们可能不会想到日后会诞生像wuhan2020这样的项目，更不会想到开源社区在全世界会发展得如此壮大。
@@ -18,7 +17,7 @@ wuhan2020号召大家以远程协作的形式共同对抗疫情，但类似这�
 </div>
 
 <div class="pic">
-<image src='/images/996icupage.png'></image>
+<image mode="widthFix" src='/images/996icupage.png'></image>
 </div>
 
 <div class="word">

@@ -1,6 +1,5 @@
 <image mode="widthFix" src="cloud://times-1pm10.7469-times-1pm10-1302409958/images/Back3.png" bindtap="back" class="First"></image>
 
-<h1>未来</h1>
 <div class="word">
 眼下wuhan2020的工作还在继续，Frank仍然保持着每天固定时间上线查看的习惯。虽然项目的热度已经不及建立初期，在每周自动生成的周报中，新的关注者和讨论也逐渐减少，但这促使团队进一步地探索——如今项目的GitHub页面上不再只有信息的收集，突发新闻的报道和关于功能完善的不断讨论持续进行，具体的内容也随着国内疫情的缓解而逐渐以国外的物资求助为主。
 </div>
@@ -15,7 +14,7 @@
 </div>
 
 <div class="pic">
-<image src='/images/hackforwuhan.jpg'></image>
+<image mode="widthFix" src='/images/hackforwuhan.jpg'></image>
 </div>
 
 <div class="word">

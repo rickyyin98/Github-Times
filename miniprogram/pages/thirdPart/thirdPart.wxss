@@ -24,8 +24,9 @@ h1{
 }
 
 .pic{
-  margin-left: 10%;
-  margin-right: 10%;
+  width:85%;
+  margin-left: 7.5%;
+  margin-right: 7.5%;
   text-align: justify;
   margin-top: 10px;
   margin-bottom: 10px;

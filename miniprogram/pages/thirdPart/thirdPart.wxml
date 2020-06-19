@@ -1,6 +1,5 @@
 <image mode="widthFix" src="cloud://times-1pm10.7469-times-1pm10-1302409958/images/Back2.png" bindtap="back" class="First"></image>
 
-<h1>互利共赢</h1>
 
 <div class="word">
 相比于国内公司单方面地从开源社区取得一些利益，国外公司则更早地走向了力求和开源社区形成双赢的合作方式。

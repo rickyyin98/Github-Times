@@ -2,9 +2,8 @@
 
 
 <div class="pic">
-<image src='/images/zhongzhichengcheng.png'></image>
+<image mode="widthFix" src='/images/zhongzhichengcheng.png'></image>
 </div>
-<h1>共克时艰</h1>
 <div class="word">
 wuhan2020，一个在今年年初的新冠肺炎疫情中为需要的机构和个人提供帮助的平台。它涵盖了医院物资募捐、物流解决方案、捐款通道和在线义诊多种服务方式，并实时更新疫情情况及所有募集信息。在普通公众看来，它只是一个便捷查询与服务的网页。而它的背后，却是一个充满活力的开源社区。
 </div>
