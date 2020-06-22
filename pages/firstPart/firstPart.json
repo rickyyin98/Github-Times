@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "共克时艰",
+
+  "usingComponents": {
+      "ec-canvas": "../../ec-canvas/ec-canvas"
+    }
+  
+}

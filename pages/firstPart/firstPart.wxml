@@ -1,9 +1,9 @@
 <image mode="widthFix" src="cloud://times-1pm10.7469-times-1pm10-1302409958/images/Back0.png" bindtap="back" class="First"></image>
 
 
-<div class="pic">
-<image mode="widthFix" src='/images/zhongzhichengcheng.png'></image>
-</div>
+<image mode="widthFix" class="First" src='cloud://times-1pm10.7469-times-1pm10-1302409958/photo/zhongzhichengcheng.png'></image>
+
+
 <div class="word">
 wuhan2020，一个在今年年初的新冠肺炎疫情中为需要的机构和个人提供帮助的平台。它涵盖了医院物资募捐、物流解决方案、捐款通道和在线义诊多种服务方式，并实时更新疫情情况及所有募集信息。在普通公众看来，它只是一个便捷查询与服务的网页。而它的背后，却是一个充满活力的开源社区。
 </div>
@@ -22,6 +22,14 @@ wuhan2020项目分为技术、信息、协调、宣传等六个小组，分别�
 
 
 
+<div style="display: inline-block;position:relative;width:85%;height:450px;margin-left:5%;margin-right:10%">
+<view class="container">
+  <ec-canvas id="mychart-dom-multi-bar" canvas-id="mychart-multi-bar" ec="{{ ecBar }}"></ec-canvas>
+  <!--ec-canvas id="mychart-dom-multi-scatter" canvas-id="mychart-multi-scatter" ec="{{ ecScatter }}"></ec-canvas-->
+</view>
+</div>
+
+
 <div class="word">
 多人短时间的集结联合很快带来了协作上的问题。第一天，所有的数据都保存在GitHub仓库的csv文件中。但是由于项目迅速得到了广大程序员的响应，这个方案在当天夜里就不得不废弃了。“用纯文本文件的形式协作，效果相当不好，因为国内很多人对这种标准的开源协作流程是不了解的。第二天我们就紧急发布了第二个版本：基于石墨文档的方式去做。”作为湖北当地的企业，石墨文档也根据wuhan2020工作组的需求实时配合了功能的开发支持。在之后短短三天的时间内，Slack交流组加入了上千名开发者。Frank笑称，“我们很多人现在我还不太认识，因为人实在太多了。”
 </div>
@@ -38,5 +46,8 @@ wuhan2020项目分为技术、信息、协调、宣传等六个小组，分别�
 2月8日，wuhan2020信息服务官网正式上线。除了实时的疫情数据，还包括湖北当地急需物资的224家医院、湖北全省57家接受物资和资金捐助的组织，以及全国各地可以为湖北省在外人士提供住宿的酒店的联系方式。很多个人利用了上面的捐款渠道去捐款，捐款之后还会把wuhan2020推荐给身边的人。“美国那边有团队通过我们的数据定向给武汉医院捐了口罩，还有就是利用我们数据对外创建数据的公司也从北欧做了百万级别的医疗物资的采购。”Frank说。同时，wuhan2020也为海外公司的疫情数据平台贡献了范本。“美国有个医疗物资对接的公司拿它去做了一个面向海外的物资网站。”
 </div>
 
+<image mode="widthFix" src="cloud://times-1pm10.7469-times-1pm10-1302409958/charts/1-2.png" class="First"></image>
+
+<image mode="widthFix" src="cloud://times-1pm10.7469-times-1pm10-1302409958/charts/1-3.png" class="First"></image>
 
 <image mode="widthFix" src="cloud://times-1pm10.7469-times-1pm10-1302409958/images/Go2.png" bindtap="go" class="First"></image>

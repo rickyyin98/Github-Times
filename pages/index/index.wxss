@@ -1,7 +1,7 @@
 /* 首页样式 */
 page{
   height:100%;
-  background-color: #d695ff
+  background-color: #FF644E
 }
 .container {
   height: 100%;
@@ -22,15 +22,15 @@ page{
   text-align: left;
   font-size: 25pt;
   font-weight: bold;
-  color: #000000;
-  margin-top: 10%;
+  color: #ffffff;
+  margin-top: 12%;
   margin-left: 2%
 }
 .title2 {
   text-align: left;
-  font-size: 20pt;
+  font-size: 18pt;
   font-weight: lighter;
-  color: #000000;
+  color: #ffffff;
   margin-left: 2%
 }
 
@@ -40,7 +40,7 @@ page{
   display: flex;
   white-space: nowrap;
   height: 1980px;
-  margin-top: 10%
+  margin-top: 14%
 }
 .image-group image {
   display: inline-block;
