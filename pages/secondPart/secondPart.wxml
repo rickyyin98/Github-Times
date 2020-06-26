@@ -48,7 +48,7 @@ wuhan2020号召大家以远程协作的形式共同对抗疫情，但类似这�
 国内也有想复制GitHub的开源社区产品，但相比功能完整的GitHub，都显得不够成熟。李卓桓认为，一方面是国内开源社区的人气还不够，另一方面是对开源的信任还不够。
 </div>
 
-<div style="display: inline-block;position:relative;width:85%;height:350px;margin-left:5%;margin-right:10%">
+<div style="display: inline-block;position:relative;width:90%;height:350px;margin-left:5%;margin-right:5%">
 <view class="container">
   <ec-canvas id="mychart-dom-multi-bar" canvas-id="mychart-multi-bar" ec="{{ ecBar }}"></ec-canvas>
 </view>

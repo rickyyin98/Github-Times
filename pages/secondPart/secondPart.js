@@ -62,50 +62,41 @@ Page({
 
 function getBarOption() {
   return {
-  tooltip: {
-      trigger: 'axis',
-      axisPointer: {            // 坐标轴指示器，坐标轴触发有效
-          type: 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
-      }
-  },
   legend: {
-      data: [ '组织用户数（万人）','用户总数（万人）']
+      data: ['组织用户数（万人)', '用户总数（万人）'],
+      left: 'center',
+      top: 'bottom',
   },
-  grid: {
-      left: '3%',
-      right: '4%',
-      bottom: '3%',
-      containLabel: true
+  tooltip: {},
+  xAxis: {
+      data: ['2016', '2017', '2018', '2019'],
+      splitLine: {
+          show: false
+      }
   },
-  xAxis: [
-      {
-          type: 'category',
-          data: ['2016', '2017', '2018', '2019']
-      }
-  ],
-  yAxis: [
-      {
-          type: 'value'
-      }
-  ],
-  series: [
-
-      {
-          name: '组织用户数（万人）',
-          type: 'bar',
-          barWidth:40,
-          stack: '搜索引擎',
-          data: [105,150,210,290],
-  color:'	#FFD700	'
+  yAxis: {
+  },
+  series: [{
+      name: '组织用户数（万人)',
+      type: 'bar',
+      data: [105,150,210,290],
+      animationDelay: function (idx) {
+          return idx * 10;
       },
-      {
-          name: '用户总数（万人）',
-          type: 'bar',
-          stack: '搜索引擎',
-          data: [1625,2250,2890,3710],
-  color:'	#FF6347	'
+      color:'	#FFD700	'
+  }, {
+      name: '用户总数（万人）',
+      type: 'bar',
+      data: [1625,2250,2890,3710],
+      animationDelay: function (idx) {
+          return idx * 10 + 100;
+      },
+      color:'	#FF6347	'
+  }],
+  animationEasing: 'elasticOut',
+  animationDelayUpdate: function (idx) {
+      return idx * 5;
   }
-]
   };
 }
 
