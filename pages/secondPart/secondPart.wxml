@@ -73,7 +73,7 @@ wuhan2020号召大家以远程协作的形式共同对抗疫情，但类似这�
 </view>
 </div>
 
-<div style="display: inline-block;position:relative;width:85%;height:350px;margin-left:5%;margin-right:10%">
+<div style="display: inline-block;position:relative;width:75%;height:350px;margin-left:10%;margin-right:15%">
 <view class="container">
   <ec-canvas id="mychart-dom-multi-bar" canvas-id="mychart-multi-bar" ec="{{ ecAsia }}"></ec-canvas>
 </view>

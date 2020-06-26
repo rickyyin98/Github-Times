@@ -113,7 +113,7 @@ function getPieOption() {
   return {
     tooltip: {
       trigger: 'item',
-      formatter: '{a} <br/>{b} : {c} ({d}%)'
+      formatter: '{a} {b} : {c} ({d}%)'
   },
   legend: {
       left: 'center',
@@ -170,57 +170,56 @@ function getPieOption() {
 function getAsiaOption() {
   return {
     tooltip: {
-      trigger: 'item',
-      formatter: '{a} {b}% : {c} ({d}%)'
-  },
-  legend: {
+        trigger: 'item',
+        formatter: '{a} {b} : {c} ({d}%)'
+    },
+
+    visualMap: {
+        show: false,
+        min: 80,
+        max: 600,
+        inRange: {
+            colorLightness: [0, 1]
+        }
+    },
+    legend: {
       left: 'center',
       top: 'bottom',
-      data: ['中国', '亚洲其他国家（万人）']
+      data: ['中国', '亚洲其他国家']
   },
-  toolbox: {
-      show: true,
-      feature: {
-          mark: {show: true},
-          dataView: {show: true, readOnly: false},
-          magicType: {
-              show: true,
-              type: ['pie', 'funnel']
-          },
-          restore: {show: true},
-          saveAsImage: {show: true}
-      }
-  },
-  series: [
-     
-      {
-          name: '',
-          type: 'pie',
-          radius: [70, 120],
-          center: ['50%', '50%'],
-          roseType: 'area',
-          data: [
-              {value: 119.1, name: '中国'},
-              {value: 265.3, name: '亚洲其他国家（万人）'}
-          ],
-    itemStyle: {
-        emphasis: {
-            shadowBlur: 10,
-            shadowOffsetX: 0,
-            shadowColor: 'rgba(0, 0, 0, 0.5)'
-         },
-               normal:{
-            color:function(params) {
-            //自定义颜色
-            var colorList = [           
-                      '#FF0000','#90EE90'
-                ];
-                return colorList[params.dataIndex]
-             }
+    series: [
+        {
+            name: '用户数量',
+            type: 'pie',
+            radius: '55%',
+            center: ['50%', '50%'],
+            data: [
+               
+                {value: 119.1, name: '中国'},
+                {value: 265.3, name: '亚洲其他国家'}
+            ].sort(function (a, b) { return a.value - b.value; }),
+            roseType: 'radius',
+            label: {
+                color: 'rgba(255, 255, 255, 0.3)'
+            },
+            labelLine: {
+                lineStyle: {
+                    color: 'rgba(255, 255, 255, 0.3)'
+                },
+                smooth: 0.2,
+                length: 10,
+                length2: 20
+            },
+            itemStyle: {
+                color: '#c23531',
+            },
+
+            animationType: 'scale',
+            animationEasing: 'elasticOut',
+            animationDelay: function (idx) {
+                return Math.random() * 200;
+            }
         }
-    }
-    
-      }
-  ]
+    ]
 }
 }
