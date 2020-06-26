@@ -14,7 +14,18 @@
   text-align: justify;
   margin-top: 10px;
   margin-bottom: 10px;
-  color: #666666;
+  color: #9b7373;
+  line-height:30px
+}
+
+.mainpoint{
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: justify;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #5a0e0e;
   line-height:30px
 }
 
