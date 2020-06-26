@@ -154,7 +154,7 @@ function getPieOption() {
              color:function(params) {
              //自定义颜色
              var colorList = [           
-                           '#FF0000','#98FB98','#FFF900','#E87C25','#27727B','#00BFFF'
+                           '#ffb96d','#f79558','#f07143','#e84d2f','#e1291a','#d90505'
                  ];
                  return colorList[params.dataIndex]
               }
@@ -211,7 +211,15 @@ function getAsiaOption() {
                 length2: 20
             },
             itemStyle: {
-                color: '#c23531',
+              normal:{
+                color:function(params) {
+                //自定义颜色
+                var colorList = [           
+                              '#f07143'
+                    ];
+                    return colorList[params.dataIndex]
+                 }
+            }
             },
 
             animationType: 'scale',
