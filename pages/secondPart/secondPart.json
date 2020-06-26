@@ -1,3 +1,7 @@
 {
-  "navigationBarTitleText": "开源在中国"
+  "navigationBarTitleText": "开源在中国",
+
+  "usingComponents": {
+    "ec-canvas": "../../ec-canvas/ec-canvas"
+  }
 }

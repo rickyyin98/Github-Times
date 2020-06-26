@@ -9,7 +9,12 @@
 随着云计算、大数据、人工智能等前沿技术的不断发展，近年来越来越多的企业开始转向开源——在2019年Github的全球10大活跃项目中，谷歌占据三席，这两年才初步开源的微软也占据两席。
 </div>
 
-<image mode="widthFix" src="cloud://times-1pm10.7469-times-1pm10-1302409958/charts/3-1.png" class="First"></image>
+<div style="display: inline-block;position:relative;width:85%;height:550px;margin-left:5%;margin-right:10%">
+<view class="container">
+  <ec-canvas id="mychart-dom-multi-bar" canvas-id="mychart-multi-bar" ec="{{ ecBar }}"></ec-canvas>
+</view>
+</div>
+
 
 <div class="word">
 放眼国内，虽然近年来我国科技公司在GitHub上部署项目的积极性有所提高，但总体而言仍不太活跃。
@@ -19,7 +24,11 @@
 2019年最活跃的阿里只有6个全球Top500项目，而百度、腾讯、京东、华为在这项数据上的表现分别只有4个、0个、2个、1个。
 </div>
 
-<image mode="widthFix" src="cloud://times-1pm10.7469-times-1pm10-1302409958/charts/3-2.png" class="First"></image>
+<div style="display: inline-block;position:relative;width:85%;height:650px;margin-left:5%;margin-right:10%">
+<view class="container">
+  <ec-canvas id="mychart-dom-multi-bar" canvas-id="mychart-multi-bar" ec="{{ ecPie }}"></ec-canvas>
+</view>
+</div>
 
 <div class="word">
 奇绩创坛作为国内最早开始投资开源项目的机构之一，作为团队核心成员之一的曹勖文对这些现象的理解一针见血——因为国内很多公司尚未尝到开源的甜头。

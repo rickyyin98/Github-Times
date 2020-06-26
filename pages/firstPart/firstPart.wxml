@@ -38,7 +38,6 @@ wuhan2020项目分为技术、信息、协调、宣传等六个小组，分别�
 <div style="display: inline-block;position:relative;width:85%;height:450px;margin-left:5%;margin-right:10%">
 <view class="container">
   <ec-canvas id="mychart-dom-multi-bar" canvas-id="mychart-multi-bar" ec="{{ ecBar }}"></ec-canvas>
-  <!--ec-canvas id="mychart-dom-multi-scatter" canvas-id="mychart-multi-scatter" ec="{{ ecScatter }}"></ec-canvas-->
 </view>
 </div>
 

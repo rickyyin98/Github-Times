@@ -48,7 +48,11 @@ wuhan2020号召大家以远程协作的形式共同对抗疫情，但类似这�
 国内也有想复制GitHub的开源社区产品，但相比功能完整的GitHub，都显得不够成熟。李卓桓认为，一方面是国内开源社区的人气还不够，另一方面是对开源的信任还不够。
 </div>
 
-<image mode="widthFix" src="cloud://times-1pm10.7469-times-1pm10-1302409958/charts/2-1.png" class="First"></image>
+<div style="display: inline-block;position:relative;width:85%;height:350px;margin-left:5%;margin-right:10%">
+<view class="container">
+  <ec-canvas id="mychart-dom-multi-bar" canvas-id="mychart-multi-bar" ec="{{ ecBar }}"></ec-canvas>
+</view>
+</div>
 
 
 <div class="word">
@@ -63,9 +67,17 @@ wuhan2020号召大家以远程协作的形式共同对抗疫情，但类似这�
 可以看到，我国相当多的一部分用户使用GitHub更多出于私人目的而非“开源”。
 </div>
 
-<image mode="widthFix" src="cloud://times-1pm10.7469-times-1pm10-1302409958/charts/2-2.png" class="First"></image>
+<div style="display: inline-block;position:relative;width:85%;height:350px;margin-left:5%;margin-right:10%">
+<view class="container">
+  <ec-canvas id="mychart-dom-multi-bar" canvas-id="mychart-multi-bar" ec="{{ ecPie }}"></ec-canvas>
+</view>
+</div>
 
-<image mode="widthFix" src="cloud://times-1pm10.7469-times-1pm10-1302409958/charts/2-3.png" class="First"></image>
+<div style="display: inline-block;position:relative;width:85%;height:350px;margin-left:5%;margin-right:10%">
+<view class="container">
+  <ec-canvas id="mychart-dom-multi-bar" canvas-id="mychart-multi-bar" ec="{{ ecAsia }}"></ec-canvas>
+</view>
+</div>
 
 <div class="word">
 谈到国内和国外在开源上产生的差距，李卓桓不认为完全是经济和技术上的差距导致的。

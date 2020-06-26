@@ -1,18 +1,49 @@
-// miniprogram/pages/thirdPart/thirdPart.js
+import * as echarts from '../../ec-canvas/echarts';
+
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
+    ecBar: {
+      onInit: function (canvas, width, height, dpr) {
+        const barChart = echarts.init(canvas, null, {
+          width: width,
+          height: height,
+          devicePixelRatio: dpr // new
+        });
+        canvas.setChart(barChart);
+        barChart.setOption(getBarOption());
 
+        return barChart;
+      }
+    },
+    ecPie: {
+      onInit: function (canvas, width, height, dpr) {
+        const pieChart = echarts.init(canvas, null, {
+          width: width,
+          height: height,
+          devicePixelRatio: dpr // new
+        });
+        canvas.setChart(pieChart);
+        pieChart.setOption(getPieOption());
+
+        return pieChart;
+      }
+    },
+    ecAsia: {
+      onInit: function (canvas, width, height, dpr) {
+        const pieAsia = echarts.init(canvas, null, {
+          width: width,
+          height: height,
+          devicePixelRatio: dpr // new
+        });
+        canvas.setChart(pieAsia);
+        pieAsia.setOption(getAsiaOption());
+
+        return pieAsia;
+      }
+    },
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  onReady() {
   },
 
   back: function () {
@@ -25,6 +56,171 @@ Page({
     wx.navigateTo({
       url: '/pages/thirdPart/thirdPart',
     })
-  },
+  }
+});
 
-})
+
+function getBarOption() {
+  return {
+  tooltip: {
+      trigger: 'axis',
+      axisPointer: {            // 坐标轴指示器，坐标轴触发有效
+          type: 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+      }
+  },
+  legend: {
+      data: [ '组织用户数（万人）','用户总数（万人）']
+  },
+  grid: {
+      left: '3%',
+      right: '4%',
+      bottom: '3%',
+      containLabel: true
+  },
+  xAxis: [
+      {
+          type: 'category',
+          data: ['2016', '2017', '2018', '2019']
+      }
+  ],
+  yAxis: [
+      {
+          type: 'value'
+      }
+  ],
+  series: [
+
+      {
+          name: '组织用户数（万人）',
+          type: 'bar',
+          barWidth:40,
+          stack: '搜索引擎',
+          data: [105,150,210,290],
+  color:'	#FFD700	'
+      },
+      {
+          name: '用户总数（万人）',
+          type: 'bar',
+          stack: '搜索引擎',
+          data: [1625,2250,2890,3710],
+  color:'	#FF6347	'
+  }
+]
+  };
+}
+
+function getPieOption() {
+  return {
+    tooltip: {
+      trigger: 'item',
+      formatter: '{a} <br/>{b} : {c} ({d}%)'
+  },
+  legend: {
+      left: 'center',
+      top: 'bottom',
+      data: ['亚洲', '欧洲', '北美洲', '南美洲', '非洲', '大洋洲（万人）']
+  },
+  series: [
+      {
+          name: '',
+          type: 'pie',
+          radius: [20, 110],
+          center: ['50%', '50%'],
+          roseType: 'radius',
+          label: {
+              show: false
+          },
+          emphasis: {
+              label: {
+                  show: true
+              }
+          },
+          data: [
+              {value: 384.4, name: '亚洲'},
+              {value: 309.7, name: '欧洲'},
+              {value: 303.1, name: '北美洲'},
+              {value: 63.6, name: '南美洲'},
+              {value: 24.8, name: '非洲'},
+              {value: 22.1, name: '大洋洲（万人）'}
+             
+          ],
+    itemStyle: {
+           emphasis: {
+               shadowBlur: 10,
+               shadowOffsetX: 0,
+               shadowColor: 'rgba(0, 0, 0, 0.5)'
+            },
+         normal:{
+             color:function(params) {
+             //自定义颜色
+             var colorList = [           
+                           '#FF0000','#98FB98','#FFF900','#E87C25','#27727B','#00BFFF'
+                 ];
+                 return colorList[params.dataIndex]
+              }
+         }
+       }
+
+      },
+      
+  ]
+  };
+}
+
+function getAsiaOption() {
+  return {
+    tooltip: {
+      trigger: 'item',
+      formatter: '{a} {b}% : {c} ({d}%)'
+  },
+  legend: {
+      left: 'center',
+      top: 'bottom',
+      data: ['中国', '亚洲其他国家（万人）']
+  },
+  toolbox: {
+      show: true,
+      feature: {
+          mark: {show: true},
+          dataView: {show: true, readOnly: false},
+          magicType: {
+              show: true,
+              type: ['pie', 'funnel']
+          },
+          restore: {show: true},
+          saveAsImage: {show: true}
+      }
+  },
+  series: [
+     
+      {
+          name: '',
+          type: 'pie',
+          radius: [70, 120],
+          center: ['50%', '50%'],
+          roseType: 'area',
+          data: [
+              {value: 119.1, name: '中国'},
+              {value: 265.3, name: '亚洲其他国家（万人）'}
+          ],
+    itemStyle: {
+        emphasis: {
+            shadowBlur: 10,
+            shadowOffsetX: 0,
+            shadowColor: 'rgba(0, 0, 0, 0.5)'
+         },
+               normal:{
+            color:function(params) {
+            //自定义颜色
+            var colorList = [           
+                      '#FF0000','#90EE90'
+                ];
+                return colorList[params.dataIndex]
+             }
+        }
+    }
+    
+      }
+  ]
+}
+}

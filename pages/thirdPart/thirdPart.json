@@ -1,3 +1,7 @@
 {
-  "navigationBarTitleText": "互利共赢"
+  "navigationBarTitleText": "互利共赢",
+
+  "usingComponents": {
+    "ec-canvas": "../../ec-canvas/ec-canvas"
+  }
 }
