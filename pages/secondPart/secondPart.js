@@ -2,6 +2,7 @@ import * as echarts from '../../ec-canvas/echarts';
 
 Page({
   data: {
+    type: '收起',
     ecBar: {
       onInit: function (canvas, width, height, dpr) {
         const barChart = echarts.init(canvas, null, {
@@ -56,47 +57,73 @@ Page({
     wx.navigateTo({
       url: '/pages/thirdPart/thirdPart',
     })
-  }
+  },
+
+  toggle: function(e) {
+    var that = this;
+    var type = that.data.type === '打开' ? '收起' : '打开';
+    that.setData({
+        type: type
+    });
+}
 });
 
 
 function getBarOption() {
   return {
-  legend: {
-      data: ['组织用户数（万人)', '用户总数（万人）'],
-      left: 'center',
-      top: 'bottom',
-  },
-  tooltip: {},
-  xAxis: {
-      data: ['2016', '2017', '2018', '2019'],
-      splitLine: {
-          show: false
-      }
-  },
-  yAxis: {
-  },
-  series: [{
-      name: '组织用户数（万人)',
-      type: 'bar',
-      data: [105,150,210,290],
-      animationDelay: function (idx) {
-          return idx * 10;
-      },
-      color:'	#FFD700	'
-  }, {
-      name: '用户总数（万人）',
-      type: 'bar',
-      data: [1625,2250,2890,3710],
-      animationDelay: function (idx) {
-          return idx * 10 + 100;
-      },
-      color:'	#FF6347	'
-  }],
-  animationEasing: 'elasticOut',
-  animationDelayUpdate: function (idx) {
-      return idx * 5;
+    tooltip: {
+      trigger: 'item',
+showDelay: 10,             // 显示延迟，添加显示延迟可以避免频繁切换，单位ms
+      hideDelay: 10,            // 隐藏延迟，单位ms
+      transitionDuration : 10,  // 动画变换时间，单位s
+backgroundColor: 'rgba(0,0,0,0.7)',     // 提示背景颜色，默认为透明度为0.7的黑色
+      axisPointer: {            // 坐标轴指示器，坐标轴触发有效
+          type: 'shadow' ,       // 默认为直线，可选为：'line' | 'shadow'
+      
+shadowStyle : {                       // 阴影指示器样式设置
+          width: 'auto',                   // 阴影大小
+          color: '#D3D3D3'  // 阴影颜色
   }
+  },
+  },
+legend: {
+      data: [ '组织用户数（万人）','用户总数（万人）']
+  },
+grid: {
+      left: '3%',
+      right: '4%',
+      bottom: '3%',
+      containLabel: true
+  },
+xAxis: [
+      {
+          type: 'category',
+          data: ['2016', '2017', '2018', '2019']
+      }
+  ],
+yAxis: [
+      {
+          type: 'value'
+      }
+  ],
+series: [
+
+      {
+          name: '组织用户数（万人）',
+          type: 'bar',
+          barWidth:40,
+          stack: '搜索引擎',
+          data: [105,150,210,290],
+  color:'	#FFD700	'
+      },
+      {
+          name: '用户总数（万人）',
+          type: 'bar',
+          stack: '搜索引擎',
+          data: [1625,2250,2890,3710],
+  color:'	#FF6347	'
+  }
+]
   };
 }
 

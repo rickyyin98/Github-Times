@@ -12,6 +12,28 @@ wuhan2020号召大家以远程协作的形式共同对抗疫情，但类似这�
 目前已有超过20年编程经验的资深互联网从业者李卓桓，在大学的时候通过爱好者协会第一次接触到了开源——那是一个连互联网在中国都还未普及的年代。
 </div>
 
+<view wx:if="{{type=='打开'}}">
+<view class="world">1980年——Usenet建立(即“新闻讨论组”)</view>
+<view class="world">1989年——386 BSD操作系统</view>
+<view class="world">1991年——Linus Torvalds创建Linux</view>
+<view class="world">1993年——红帽（Redhat）的成立</view>
+<view class="world">1994年——MySQL的启动</view>
+<view class="china">1994年——Linux第一次进入中国</view>
+<view class="world">1996年——Apache称霸互联网</view>
+<view class="china">1997年——最早的中文Linux计划在位于江苏省常州市正式建立</view>
+<view class="world">1998年——Netscape的浏览器开源</view>
+<view class="china">1999年——第一版红旗Linux发布</view>
+<view class="china">2000年-2008年——LinuxWorld China举办</view>
+<view class="world">2004年——Canonical公司发布Ubuntu</view>
+<view class="world">2008年——GitHub问世</view>
+<view class="china">2008年——开源中国社区成立</view>
+<view class="china">2009年——第一届中国云计算大会举办</view>
+<view class="world">2010年——美国国家航空航天局和Rackspace合作研发的OpenStack</view>
+<view class="china">2013年——开源中国推出代码托管平台码云Gitee</view>
+<view bindtap="toggle" class="box1">点击收起时间线</view>
+</view>
+<view class="box2" wx:if="{{type=='收起'}}" bindtap="toggle">点击查看时间线</view>
+
 <div class="word">
 作为国内最早接触开源的一批人，同时拥有包括Google 认证机器学习开发者专家、优酷首席科学家等头衔的李卓桓认为：“开源就是为了解决一个问题而大家一起编写代码生成一个产品，一同使用并完善这个代码，最终形成一个生态。所有人都可以寻找问题出在哪，代码的质量会得到巨大的提升，解决问题的速度也更快。”
 </div>
@@ -48,11 +70,7 @@ wuhan2020号召大家以远程协作的形式共同对抗疫情，但类似这�
 国内也有想复制GitHub的开源社区产品，但相比功能完整的GitHub，都显得不够成熟。李卓桓认为，一方面是国内开源社区的人气还不够，另一方面是对开源的信任还不够。
 </div>
 
-<div style="display: inline-block;position:relative;width:90%;height:350px;margin-left:5%;margin-right:5%">
-<view class="container">
-  <ec-canvas id="mychart-dom-multi-bar" canvas-id="mychart-multi-bar" ec="{{ ecBar }}"></ec-canvas>
-</view>
-</div>
+<image mode="widthFix" src="cloud://times-1pm10.7469-times-1pm10-1302409958/images/截屏2020-06-27 上午1.48.58.png" class="First"></image>
 
 
 <div class="word">

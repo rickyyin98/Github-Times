@@ -36,9 +36,8 @@ wuhan2020在竹间智能的情感机器人的基础上，提供了部分知识�
 今年的黑客松主题为《用数字化和开放协作解决疫情背后的社会危机和挑战》，旨在以比赛的形式，号召参赛者通过团队协作，在三天时间内利用开源寻求应对公共危机和社会挑战的解决方案，呼吁更多人参与、分享有价值的社会创新项目。
 </div>
 
-<div class="pic">
-<image mode="widthFix" src='cloud://times-1pm10.7469-times-1pm10-1302409958/photo/hackforwuhan.jpg'></image>
-</div>
+<image mode="widthFix" src='cloud://times-1pm10.7469-times-1pm10-1302409958/photo/hackforwuhan.jpg' class="First"></image>
+
 
 <div class="word">
 Frank和曹勖文都作为特邀嘉宾参与到了Hack For Wuhan的活动当中。短短一个月时间，主办方收到了来自33个国家共902名选手报名参赛。获奖的作品包括数据平台、游戏、疫情机器人等形式，通过比赛探讨了开源技术在面对社会问题时可以提供的各种可能性。

@@ -78,8 +78,8 @@ function getPieOption() {
       containLabel: true
   },
   xAxis: {
-      type: 'value',
-      boundaryGap: [0, 0.01]
+    type: 'value',
+    boundaryGap: [0, 0.01]
   },
   yAxis: {
       type: 'category',
@@ -120,15 +120,16 @@ function getBarOption() {
       data: ['项目活跃度','项目讨论数']
   },
   grid: {
-      left: '3%',
-      right: '4%',
-      bottom: '3%',
-      containLabel: true
-  },
-  xAxis: {
-      type: 'value',
-      boundaryGap: [0, 0.01]
-  },
+    left: '3%',
+    right: '4%',
+    bottom: '3%',
+    containLabel: true
+},
+xAxis: {
+  type: 'value',
+  boundaryGap: [0, 0.01],
+  splitNumber:1
+},
   yAxis: {
       type: 'category',
       data: ['tweakCompatible（IOS越狱工具）' , 'ansible（python类）', 'DefinitelyTyped（代码库）', 'tensorflow（谷歌）', 'kubernetes（谷歌）', 'first-contributions（新手指南）' , 'flutter（谷歌）' , 'azure-docs（微软）' , '996.ICU（中国）' , 'vscode（微软）']
